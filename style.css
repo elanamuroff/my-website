@@ -1,3 +1,4 @@
+/* external stylesheet */
 h1{
     text-align: center;
     color:blueviolet;
@@ -9,7 +10,7 @@ h2{
 }
 p{
     font-family: "Lucida Console", "Courier New", monospace;
-    font: size 16px;
+    font-size: 16px;
     text-align: justify;
     background-color: lightsteelblue;
 }
