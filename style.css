@@ -4,8 +4,10 @@ h1{
     text-transform: uppercase;
 }
 h2{
-
+    background-color: lightcyan;
+    font-family: Papyrus, "Brush Script MT", Monaco;
 }
 p{
-    
+    font-family: "Lucida Console", "Courier New", monospace;
+    font: size 16px;
 }
