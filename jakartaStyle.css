@@ -6,3 +6,11 @@ h1 {
     border: 5px solid blueviolet;
     padding: 8px;
 }
+
+p.eat-drink, p.visit{
+    text-indent: 10%
+}
+
+.visit{
+    color:darkslateblue
+}
