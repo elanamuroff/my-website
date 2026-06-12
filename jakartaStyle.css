@@ -1,0 +1,6 @@
+/* center the h1 element and center text within the element */
+h1 {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
