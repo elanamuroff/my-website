@@ -3,4 +3,6 @@ h1 {
     width: 50%;
     margin: auto;
     text-align: center;
+    border: 5px solid blueviolet;
+    padding: 8px;
 }
