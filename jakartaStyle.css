@@ -1,44 +1,45 @@
 /* Centers the h1 element and center text within the element. Also adds 50% width, padding, and a visible border. */
 h1 {
-    width: 50%;
-    margin: auto;
-    text-align: center;
-    border: 5px solid blueviolet;
-    padding: 8px;
+	width: 50%;
+	margin: auto;
+	text-align: center;
+	border: 5px solid blueviolet;
+	padding: 8px;
 }
 
 /* indents two specific paragraphs of the classes "eat-drink" and "visit" */
-p.eat-drink, p.visit{
-    text-indent: 10%;
+p.eat-drink,
+p.visit {
+	text-indent: 10%;
 }
 
 /* change text color of all elements named visit */
-.visit{
-    color:darkslateblue;
+.visit {
+	color: darkslateblue;
 }
 
 /* apply style to third list item */
-ul.restaurants li:nth-child(3){
-    text-transform: uppercase;
-    color: blue;
+ul.restaurants li:nth-child(3) {
+	text-transform: uppercase;
+	color: blue;
 }
 
 /* sets link state color to green */
-a:link{
-    color:green;
+a:link {
+	color: green;
 }
 
 /* sets visited state color to blue */
-a:visited{
-    color:blue;
+a:visited {
+	color: blue;
 }
 
 /* sets hover state background color to black */
-a:hover{
-    background-color: black;
+a:hover {
+	background-color: black;
 }
 
 /* sets active state color to red */
-a:active{
-    color:red
+a:active {
+	color: red
 }
