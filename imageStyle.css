@@ -24,7 +24,9 @@
     border-radius: 25% 45%;
 }
 
-/* for formatting footer image
+/* for formatting footer image as responsive */
 .footer-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
-*/
