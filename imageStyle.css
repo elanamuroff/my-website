@@ -25,7 +25,7 @@
 }
 
 /* for formatting image above the footer as responsive */
-.footer-image {
+.img-four {
     max-width: 100%;
     height: auto;
     display: block;
