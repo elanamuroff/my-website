@@ -4,16 +4,19 @@
 .img-one {
     float: left;
     margin-right: 10px;
+    border: 5px groove teal;
 }
 
 /* style second image */
 .img-two {
     float: right;
     margin-left: 10px;
+    border: 8px dotted plum;
 }
 
 /* style third image */
 .img-three {
     float: left;
     margin-right: 10px;
+    border: 7px double lavender;
 }
