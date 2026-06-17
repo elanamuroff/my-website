@@ -24,7 +24,7 @@
     border-radius: 25% 45%;
 }
 
-/* for formatting footer image as responsive */
+/* for formatting image above the footer as responsive */
 .footer-image {
     max-width: 100%;
     height: auto;
@@ -32,5 +32,5 @@
 }
 
 footer {
-    background-image: url(images/footerCloudImg.jpg);
+    background-image: url(images/footerCloudImg2.jpg);
 }
