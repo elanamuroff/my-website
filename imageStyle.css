@@ -30,3 +30,7 @@
     height: auto;
     display: block;
 }
+
+footer {
+    background-image: url(images/footerCloudImg.jpg);
+}
