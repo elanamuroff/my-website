@@ -1,13 +1,19 @@
 /* external stylesheet for images */
 
-/*float two images to the left */
-.img-float-left {
+/* style first image */
+.img-one {
     float: left;
     margin-right: 10px;
 }
 
-/*float one image to the right */
-.img-float-right {
+/* style second image */
+.img-two {
     float: right;
     margin-left: 10px;
+}
+
+/* style third image */
+.img-three {
+    float: left;
+    margin-right: 10px;
 }
