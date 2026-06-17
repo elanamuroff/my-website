@@ -1,1 +1,13 @@
 /* external stylesheet for images */
+
+/*float two images to the left */
+.img-float-left {
+    float: left;
+    margin-right: 10px;
+}
+
+/*float one image to the right */
+.img-float-right {
+    float: right;
+    margin-left: 10px;
+}
