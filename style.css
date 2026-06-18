@@ -1,7 +1,8 @@
 /* external stylesheet */
+
 h1 {
 	text-align: center;
-	color: blueviolet;
+	color: #ff5e6c;
 	font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -18,3 +19,13 @@ p {
 ul {
 	font-family: Arial, Helvetica, sans-serif;
 }
+
+/* color scheme 
+#fff5d7 - light yellow
+#ff5e6c - pink
+#feb300 - orange
+#ffaaab - light pink
+#ffadae - light pink
+#961e42 - dark pink
+#aca040 - light green	
+*/

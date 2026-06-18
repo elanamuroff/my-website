@@ -4,7 +4,7 @@
 .img-one {
     float: left;
     margin-right: 10px;
-    border: 5px groove purple;
+    border: 5px groove #ff5e6c;
     border-radius: 50%;
 }
 
@@ -12,7 +12,7 @@
 .img-two {
     float: right;
     margin-left: 10px;
-    border: 8px dotted plum;
+    border: 8px dotted #feb300;
     border-radius: 20%;
 }
 
@@ -20,7 +20,7 @@
 .img-three {
     float: left;
     margin-right: 10px;
-    border: 7px double lavender;
+    border: 7px double #ffaaab;
     border-radius: 25% 45%;
 }
 
