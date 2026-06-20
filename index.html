@@ -31,14 +31,17 @@
       .wrapper {
          font-family: Arial, Helvetica, sans-serif;
          clear:both;
+         width: 100%;
          max-width: 900px;
          margin: 0px auto;
+         margin-inline: auto;
          display: grid;
-         gap: 10px;
-         padding: 10px;
+         gap: 5px;
+         padding: 5px;
          background-color: #FFADAE;
-         grid-template-columns: auto auto;
-         grid-template-rows: 1fr 1fr 1fr 1fr;
+         place-content: space-around center;
+         grid-template-columns: repeat(2, 100px);
+         grid-template-rows: repeat(4, 150px);
          grid-template-areas:
                'item1 item1'
                'item4 item5'
@@ -54,12 +57,43 @@
          gap: 10px;
          padding: 10px;
          background-color: #FFADAE;
-         grid-template-columns: auto auto;
-         grid-template-rows: 1fr 1fr 1fr 1fr;
+         place-content: space-around center;
+         grid-template-columns: repeat(3, 100px);
+         grid-template-rows: repeat(3, 150px);
          grid-template-areas:
-               'item1 item1'
-               'item4 item5'
-               'item6 item7'
+               'item1 item1 item1'
+               'item4 item5 item6'
+               'item7 item8 item9';
+         }
+      }
+
+      .wrapper > div {
+         /* font-family: Arial, Helvetica, sans-serif; */
+         border: 5px solid #feb300;
+         background-color: #fff5d7;
+         padding: 20px 0;
+         font-size: 1.4rem;
+      }
+      
+      .wrapper > div p {
+         place-content: end;
+         background-color: rgba(0, 0, 0, 0.5);
+         color: white;
+         padding: 5px;
+         text-align: center;
+      }
+
+      .item2{display:none}
+      .item3{display:none}
+
+      .item4{
+         background-image: url('images/watchData.jpg');
+         background-size: cover;
+         background-position: center;
+         background-repeat: no-repeat;
+      }
+
+      }
                'item8 item9';
       }
    }
