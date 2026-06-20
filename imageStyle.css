@@ -12,6 +12,7 @@
 .img-two {
     float: right;
     margin-left: 10px;
+    margin-bottom:10px;
     border: 8px dotted #feb300;
     border-radius: 20%;
 }
@@ -20,6 +21,7 @@
 .img-three {
     float: left;
     margin-right: 10px;
+    margin-bottom: 15px;
     border: 7px double #ffaaab;
     border-radius: 25% 45%;
 }
