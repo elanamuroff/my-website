@@ -75,34 +75,50 @@
          text-align: center;
       }
       
-      .wrapper > div p {
-         background-color: rgba(0, 0, 0, 0.5);
+      .wrapper > div p{
          color: white;
          text-align: center;
          padding: 5px;
+         display: inline
       }
 
-      .item2{display:none}
-      .item3{display:none}
+      .gridText {
+         background-color: rgba(0, 0, 0, 0.5);
+      }
 
-      .item4{
-        display:flex;
-        flex-direction: column;
-        justify-content: flex-end;
-         background-image: url('images/gridImages/watchData.jpg');
+      .item2, .item3 {display:none}
+
+      .item4, .item5, .item6, .item7, .item8, .item9 {
+         display:flex;
+         flex-direction: column;
+         justify-content: flex-end;
          background-size: cover;
          background-position: center;
          background-repeat: no-repeat;
+      }
+
+      .item4{
+         background-image: url('images/gridImages/watchData.jpg');
       }
 
       .item5{
-        display:flex;
-        flex-direction: column;
-        justify-content: flex-end;
          background-image: url('images/gridImages/sunProtection.jpg');
-         background-size: cover;
-         background-position: center;
-         background-repeat: no-repeat;
+      }
+
+      .item6{
+         background-image: url('images/gridImages/sleep.jpg');
+      }
+
+      .item7{
+         background-image: url('images/gridImages/strengthTraining.jpg');
+      }
+
+      .item8{
+         background-image: url('images/gridImages/runningShoes.jpg');
+      }
+
+      .item9{
+         background-image: url('images/gridImages/brightOutfits.jpg');
       }
       
       </style>
@@ -211,29 +227,27 @@
          </div>
 
          <div class="item4">
-               <!-- background image added in CSS -->
-            <p>fitness tracker data overload</p>
+            <p><span class="gridText">fitness tracker data overload</span></p>
          </div>
 
          <div class="item5">
-               <!-- background image added in CSS -->
-            <p>lots of sun protection!</p>
+            <p><span class="gridText">lots of sun protection!</span></p>
          </div>
 
          <div class="item6">
-            6
+            <p><span class="gridText">sleeping more than you ever have</span></p>
          </div>
 
          <div class="item7">
-            7
+            <p><span class="gridText">getting into strength training to support your running</span></p>
          </div>
 
          <div class="item8">
-            8
+            <p><span class="gridText">finding your favorite running shoes (and socks!)</span></p>
          </div>
 
          <div class="item9">
-            9
+            <p><span class="gridText">endless brightly colored running outfits</span></p>
          </div>
       </div>
 
