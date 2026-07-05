@@ -22,41 +22,42 @@
 			.item11 { grid-area: item11; }
 			.item12 { grid-area: item12; } */
 			.wrapper {
-			font-family: Arial, Helvetica, sans-serif;
-			clear:both;
-			width: fit-content;
-			min-width: auto;
-			max-width: 900px;
-			margin: 0px auto;
-			margin-inline: auto;
-			display: grid;
-			gap: 5px;
-			padding: 5px;
-			background-color: #FFADAE;
-			place-content: space-around center;
-			grid-template-columns: repeat(2, 166px);
-			grid-template-rows: auto 250px 250px 250px;
-			grid-template-areas:
-			'item1 item1'
-			'item4 item5'
-			'item6 item7'
-			'item8 item9';
+				font-family: Arial, Helvetica, sans-serif;
+				clear:both;
+				width: fit-content;
+				min-width: auto;
+				max-width: 900px;
+				margin: 0px auto;
+				margin-inline: auto;
+				display: grid;
+				gap: 5px;
+				padding: 5px;
+				background-color: #FFADAE;
+				place-content: space-around center;
+				grid-template-columns: repeat(2, 166px);
+				grid-template-rows: auto 250px 250px 250px;
+				grid-template-areas:
+				'item1 item1'
+				'item4 item5'
+				'item6 item7'
+				'item8 item9';
 			}
+
 			@media (min-width: 900px) {
-			.wrapper {  
-			display: grid;
-			gap: 10px;
-			padding: 10px;
-			gap: 10px;
-			background-color: #FFADAE;
-			place-content: space-around center;
-			grid-template-columns: repeat(3, 166px);
-			grid-template-rows: auto 250px 250px;
-			grid-template-areas:
-			'item1 item1 item1'
-			'item4 item5 item6'
-			'item7 item8 item9';
-			}
+				.wrapper {  
+				display: grid;
+				gap: 10px;
+				padding: 10px;
+				gap: 10px;
+				background-color: #FFADAE;
+				place-content: space-around center;
+				grid-template-columns: repeat(3, 166px);
+				grid-template-rows: auto 250px 250px;
+				grid-template-areas:
+				'item1 item1 item1'
+				'item4 item5 item6'
+				'item7 item8 item9';
+				}
 			}
 			.wrapper > div {
 			/* font-family: Arial, Helvetica, sans-serif; */
@@ -101,6 +102,46 @@
 			.item9{
 			background-image: url('images/gridImages/brightOutfits.jpg');
 			}
+
+		/*table style*/
+		.flat th, .flat td {
+			border-width: 1px; 
+			border-style: solid; 
+			border-color: black;
+			border-collapse: collapse;
+		}
+
+		.flat {
+			border-collapse: collapse;
+			border: 2.5px solid black;
+		}
+
+		.flat th, .flat td {
+			padding: 10px;
+		}
+
+		.flat th {
+			font-size: 1.2rem;
+		}
+
+		.flat th, .flat tfoot td {
+			background-color: #ffd7ab;
+		}
+
+		.flatEurope {
+			background-color: #98f5e1;
+		}
+
+		.flatAustralia {
+			background-color: #e9f2cf;
+		}
+
+		.flatUS {
+			background-color: #ffcfd2;
+		}
+		/*removes the repeated "Europe" in the table*/
+		.remove{display:none}
+
 		</style>
 	</head>
 	<body style="background-color: #fff5d7;">
@@ -162,6 +203,58 @@
 			everyday life. After a couple of weeks of consistent walks, try transitioning to run/walk intervals to slowly
 			build up your endurance.
 		</p>
+		<h2>Flat Marathon Courses You Could Try</h2>
+		<table class="flat">	
+			<thead>	
+				<th>Location</th>
+				<th>Marathon</th>
+				<th>Elevation Gain</th>
+				<th>Typical Date</th>
+			</thead>
+
+			<tbody>
+				<tr class="flatUS">
+					<td>United States</td>
+					<td>Houston Marathon</td>
+					<td>About 60m</td>
+					<td>Second Sunday of January</td>
+				</tr>
+	
+				<tr class="flatAustralia">
+					<td>Australia</td>
+					<td>Gold Coast Marathon</td>
+					<td>About 8m</td>
+					<td>First Sunday of July</td>
+				</tr>
+
+				<tr class="flatEurope">
+					<td rowspan="3">Europe</td>
+					<td>Rotterdam Marathon</td>
+					<td>Minimal</td>
+					<td>Mid-April</td>
+				</tr>
+
+				<tr class="flatEurope">
+					<td class="remove">Europe</td>
+					<td>Amsterdam Marathon</td>
+					<td>Minimal</td>
+					<td>Third Sunday of October</td>
+				</tr>
+
+				<tr class="flatEurope">
+					<td class="remove">Europe</td>
+					<td>Valencia Marathon</td>
+					<td>Less than 30m</td>
+					<td>First Sunday of December</td>
+				</tr>
+			</tbody>
+
+			<tfoot>	
+				<tr>
+					<td style= "text-align: center;" colspan="4">Source: <a href="https://support.runna.com/en/articles/14624281-the-10-flattest-marathons-in-the-world" target="_blank">Runna</a></td>
+				</tr>
+			</tfoot>
+		</table>
 		<h2>Should you worry about your pace?</h2>
 		<p>The short answer is that, unless you are an elite athlete, you should absolutely not worry about your pace.
 			Maybe you've heard the saying, "it's a marathon, not a sprint?"
