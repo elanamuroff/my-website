@@ -17,6 +17,10 @@ p {
 	text-align: justify;
 }
 
+ul {
+	font-size: 1.2rem;
+}
+
 /* color scheme 
 #fff5d7 - light yellow
 #ff5e6c - pink
