@@ -17,7 +17,8 @@ p {
 	text-align: justify;
 }
 
-ul {
+ul,
+ol {
 	font-size: 1.2rem;
 }
 
