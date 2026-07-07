@@ -142,6 +142,13 @@
 		/*removes the repeated "Europe" in the table*/
 		.remove{display:none}
 
+	/* form style */
+		.formWrapper {
+			display: flex;
+			width: 100%;
+			align-items: center;
+
+		}
 		</style>
 	</head>
 	<body style="background-color: #fff5d7;">
@@ -354,6 +361,61 @@
 			<li>personal safety while running</li>
 			<li>how to best integrate strength training into marathon training</li>
 		</ul>
+
+		<div class="formWrapper">
+		<form method="post" action="">
+			<h2>Sign up to receive emails with marathon training tips!</h2>
+			<!-- email address -->
+			<fieldset>
+				<label for="userEmail">Email address:</label>
+				<input type="email" id="userEmail" name="userEmail">
+			</fieldset>
+
+			<fieldset>	
+				<legend>How often would you like to receive emails?</legend>
+				<input type="radio" id="twiceWeekly" name="frequency" value="twiceWeekly">
+				<label for="twiceWeekly">Twice Weekly</label><br>
+				<input type="radio" id="weekly" name="frequency" value="weekly">
+				<label for="weekly">Weekly</label><br>
+				<input type="radio" id="monthly" name="frequency" value="monthly">
+				<label for="monthly">Monthly</label><br>
+			</fieldset>
+			
+			<p>Help us learn more about you and your running journey!</p>
+			<!-- datalist -->
+			<fieldset>
+				<legend>Tell us about your running experience level:</legend>
+				<label for="experience">I'd describe my experience as:</label>
+				<input list="experienceLevels" id="experience" name="experience">
+				<datalist id="experienceLevels">
+					<option value="Absolute beginner (I've never run before)">
+					<option value="I have run for a while, but I have never run at least a half marathon before">
+					<option value="I have run a half marathon before">
+					<option value="I have run a marathon before">
+				</datalist>
+			</fieldset>
+
+			<!-- text input -->
+			<fieldset>
+				<p>Have you signed up for a marathon coming up?<br>
+				If so, which marathon?</p>
+
+				<label for=“whichRace”>Name of Marathon:</label>
+				<input type=“text” id=“whichRace” name=“whichRace”>
+
+				<!-- date input -->	
+				<label for=“raceDate”>Date of Race:</label>
+				<input type="date" id=“raceDate” name=“raceDate”>
+			</fieldset>
+
+			<!-- submit and clear buttons -->
+			<fieldset>
+				<input type="submit" value="Submit">
+				<input type="reset" value="Clear">
+			</fieldset>	
+
+		</form>
+		</div>
 		<!-- add footer image -->
 		<img class="img-four" src="images/racePictureOriginal.png" alt="runners in a road race" width="800px">
 		<footer style="text-align:center;">
