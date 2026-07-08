@@ -157,18 +157,88 @@
 		legend, label, input {
 			font-size: 1.2rem;
 			font-family: Arial, Helvetica, sans-serif;
+			padding:10px;
 		}
 
 		input:focus, textarea:focus {
 			background: rgb (lightcoral / 15%);
 		}
 
+
 		.submitButton:hover {
 			background: lightgreen;
 		}
 
+		.resetButton:hover {
+			background: lightsalmon;
+
+		}
+
+	/* Container */
+		.radioLabel {
+			display: block;
+			position: relative;
+			padding-left: 35px;
+			margin-bottom: 12px;
+			cursor: pointer;
+			font-size: 1.2rem;
+			-webkit-user-select: none;
+			-moz-user-select: none;
+  			-ms-user-select: none;
+  			user-select: none;
+		}
+	/* Hide browser's default radio button */
+		.radioLabel input{
+			position: absolute;
+			opacity: 0;
+			cursor: pointer;
+		}
+
+		/* Create a custom radio button */
+		.checkmark {
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 25px;
+			width: 25px;
+			background-color: pink;
+			border-radius: 50%;
+		}
+
+		/* On mouse-over, add a grey background color */
+		.radioLabel:hover input ~ .checkmark {
+  			background-color: hotpink;
+		}
+		/* When the radio button is checked, add an orange background */
+		.container input:checked ~ .checkmark {
+ 			background-color: orange;
+		}
+
+		/* Create the indicator (the dot/circle - hidden when not checked) */
+		.checkmark:after {
+  			content: "";
+  			position: absolute;
+  			display: none;
+		}
+
+		/* Show the indicator (dot/circle) when checked */
+		.container input:checked ~ .checkmark:after {
+  			display: block;
+		}
+
+		/* Style the indicator (dot/circle) */
+		.container .checkmark:after {
+			top: 9px;
+			left: 9px;
+			width: 8px;
+			height: 8px;
+			border-radius: 50%;
+			background: white;
+		}
+
 		</style>
 	</head>
+	
 	<body style="background-color: #fff5d7;">
 		<h1>Marathon Training 101</h1>
 		<img class="img-one" src="images/racePictureOriginal.png" alt="runners in a road race" width="200px">
@@ -392,12 +462,20 @@
 			<!-- radio -->
 			<fieldset>	
 				<legend>How often would you like to receive emails?</legend>
-				<input type="radio" id="twiceWeekly" name="frequency" value="twiceWeekly">
-				<label for="twiceWeekly">Twice Weekly</label><br>
-				<input type="radio" id="weekly" name="frequency" value="weekly">
-				<label for="weekly">Weekly</label><br>
-				<input type="radio" id="monthly" name="frequency" value="monthly">
-				<label for="monthly">Monthly</label><br>
+				<label for="twiceWeekly" class="radioLabel">Twice Weekly
+					<input type="radio" id="twiceWeekly" name="frequency" value="twiceWeekly">
+					<span class="checkmark"></span>
+				</label><br>
+
+				<label for="weekly" class="radioLabel">Weekly
+					<input type="radio" id="weekly" name="frequency" value="weekly">
+					<span class="checkmark"></span>
+				</label><br>
+
+				<label for="monthly" class="radioLabel">Monthly
+					<input type="radio" id="monthly" name="frequency" value="monthly">
+					<span class="checkmark"></span>
+				</label><br>
 			</fieldset>
 			
 			<p>Help us learn more about you and your running journey!</p>
