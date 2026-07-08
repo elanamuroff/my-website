@@ -177,11 +177,37 @@
 		input[type="radio"] {
 			accent-color: orange;
 		}
+
+		/* navBar style */
+		/* This selector is targeting the <nav> element with the class named 'primary-menu' */
+		/* It is set up to take up close to 100% of the available space */
+		/* It is centered using margin:auto; and there is a 5px border */
+		/* text-align: center; will center the text in the navBar */
+		/* background-color is set to dark green */
+
+		nav.primary-menu{
+			width: 100%;
+			margin: auto;
+			/* border: solid 5px #ffecf2; */
+			color: black;	
+			text-align: center;
+			background-color: #ffecf2;
+		}
 	
 		</style>
 	</head>
 
 	<body style="background-color: #fff5d7;">
+		<nav class="primary-menu">
+ 			<ul>
+   				<li><a href="index.html">Home</a></li>
+				<li><a href="">About</a></li>
+				<li><a href="">Training Plans</a></li>
+				<li><a href="">Resources</a></li>
+				<li><a href="">Contact</a></li>
+			</ul>
+		</nav>
+
 		<h1>Marathon Training 101</h1>
 		<img class="img-one" src="images/racePictureOriginal.png" alt="runners in a road race" width="200px">
 		<h2 class="highlight">Why train for a marathon?</h2>
