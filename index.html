@@ -192,6 +192,8 @@
 			position: absolute;
 			opacity: 0;
 			cursor: pointer;
+			height: 0;
+			width: 0;
 		}
 
 		/* Create a custom radio button */
@@ -201,11 +203,13 @@
 			left: 0;
 			height: 25px;
 			width: 25px;
-			background-color: pink;
+			background-color: whitesmoke;
 			border-radius: 50%;
+			border-color: black;
+			border-width: 1px;
 		}
 
-		/* On mouse-over, add a grey background color */
+		/* On mouse-over, add a hot pink background color */
 		.radioLabel:hover input ~ .checkmark {
   			background-color: hotpink;
 		}
@@ -238,7 +242,7 @@
 
 		</style>
 	</head>
-	
+
 	<body style="background-color: #fff5d7;">
 		<h1>Marathon Training 101</h1>
 		<img class="img-one" src="images/racePictureOriginal.png" alt="runners in a road race" width="200px">
