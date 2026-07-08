@@ -173,8 +173,8 @@
 			background: lightsalmon;
 
 		}
-
-	/* Container */
+/* attempt at styling radio buttons */
+	/* Container 
 		.radioLabel {
 			display: block;
 			position: relative;
@@ -187,16 +187,17 @@
   			-ms-user-select: none;
   			user-select: none;
 		}
-	/* Hide browser's default radio button */
+			*/
+	/* Hide browser's default radio button 
 		.radioLabel input{
 			position: absolute;
 			opacity: 0;
 			cursor: pointer;
 			height: 0;
 			width: 0;
-		}
+		}*/
 
-		/* Create a custom radio button */
+		/* Create a custom radio button 
 		.checkmark {
 			position: absolute;
 			top: 0;
@@ -207,30 +208,31 @@
 			border-radius: 50%;
 			border-color: black;
 			border-width: 1px;
-		}
+		} */
 
-		/* On mouse-over, add a hot pink background color */
+		/* On mouse-over, add a hot pink background color 
 		.radioLabel:hover input ~ .checkmark {
   			background-color: hotpink;
-		}
-		/* When the radio button is checked, add an orange background */
+		} */
+		/* When the radio button is checked, add an orange background 
 		.container input:checked ~ .checkmark {
  			background-color: orange;
 		}
+		*/
 
-		/* Create the indicator (the dot/circle - hidden when not checked) */
+		/* Create the indicator (the dot/circle - hidden when not checked) 
 		.checkmark:after {
   			content: "";
   			position: absolute;
   			display: none;
-		}
+		} */
 
-		/* Show the indicator (dot/circle) when checked */
+		/* Show the indicator (dot/circle) when checked 
 		.container input:checked ~ .checkmark:after {
   			display: block;
-		}
+		} */
 
-		/* Style the indicator (dot/circle) */
+		/* Style the indicator (dot/circle) 
 		.container .checkmark:after {
 			top: 9px;
 			left: 9px;
@@ -238,7 +240,12 @@
 			height: 8px;
 			border-radius: 50%;
 			background: white;
+		} */
+
+		input[type="radio"] {
+			accent-color: orange;
 		}
+	
 
 		</style>
 	</head>
