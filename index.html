@@ -143,15 +143,21 @@
 		.remove{display:none}
 
 		/* form style */
+		.formWrapper{
+			display: flex;
+			justify-content: center;
+		}
+
 		fieldset {
 			border: 0;	
 		}
 
 		form{
 			background-color: lightpink;
-			padding: 8px; 
+			padding: 20px 5%; 
 			border-radius: 8px;
 			margin-bottom: 10px;
+			max-width: 850px;
 		}
 
 		legend, label, input {
@@ -165,6 +171,56 @@
 		}
 
 
+
+		input[type="radio"] {
+			accent-color: orange;
+		}
+
+		.radioContainer {
+			display: flex;
+			flex-direction: column;
+		}
+
+		form > h3, form > h2 {
+			text-align: center;
+		}
+/*stack race info questions instead of having them side by side */
+
+		.nameQ { grid-area: nameQ; }
+		.nameAnswer { grid-area: nameAnswer; }
+		.dateQ { grid-area: dateQ; }
+		.dateAnswer{ grid-area: dateAnswer; }		
+
+	.raceInfo {
+			clear:both;
+			width: fit-content;
+			margin: 0px auto;
+			display: grid;
+			float: left;
+			/* border: 2px solid black; */
+			gap: 2px;
+			padding: 5px 5px 5px 0px;
+			grid-template-columns: max-content auto;
+			grid-template-rows: auto auto;
+			grid-template-areas:
+			'nameQ nameAnswer'
+			'dateQ dateAnswer';
+		}
+
+		.nameQ, .dateQ{
+			text-align: right;
+		}
+
+
+/* style buttons */
+	/* center buttons at the bottom of the form */
+		.formButtons {
+			display:flex;
+			justify-content:center;
+			align-items:center;
+		}
+
+
 		.submitButton:hover {
 			background: lightgreen;
 		}
@@ -173,11 +229,6 @@
 			background: lightsalmon;
 
 		}
-
-		input[type="radio"] {
-			accent-color: orange;
-		}
-
 		/* navBar style */
 		/* This selector is targeting the <nav> element with the class named 'primary-menu' */
 		/* It is set up to take up close to 100% of the available space */
@@ -194,6 +245,52 @@
 			background-color: #ffecf2;
 		}
 	
+		.primary-menu ul {
+			margin: 0px; 
+ 			padding: 0px;
+ 			display: flex;
+ 			justify-content: center;
+			border: 1px solid darkmagenta
+		}
+
+		/* This selector is targeting the <li> elements that are within the class named 'primary-menu'. This ensures that any other lists on the page are not impacted by this css */
+		/* LAYOUT OPTION: float:left; tells the items to sit next to each other.  Use this as an alternative to display:flex; */
+		/* list-style-type: none; removes the default bullet points from the items in this unordered list */
+
+		.primary-menu li{
+			list-style-type: none;
+		}
+
+		/* This selector is targeting the <a> links inside the class named 'primary-menu'. This ensures that any other links on the page are not impacted by this css */
+		/* Font color is set to black */
+		/* text-decoration:none; removes the underline that is normally displayed under a link */
+		/* display:block; allows us to set a width, padding and margin on the links */
+		/* width is set to 100px. */
+
+		.primary-menu a{
+			color: #000;
+			text-decoration: none;
+			display: block; 
+			width: 100px;
+			padding: 14px 16px;
+		}	
+		/* The "hover" pseudo-class will be activated when the user's mouse moves over the link */
+		/* The result of the hover is specified here.  In this examlpe the background color and font color change.  You can use many more css styles - it is common to see font changes (size/weight) and border changes (usually the bottom border is activated) as a hover action */
+
+		.primary-menu a:hover{
+			background-color: #ffe099;
+			font-size: 1.5rem;
+		}
+
+		.primary-menu a:active {
+			background-color: orange;
+		}
+
+		.primary-menu a:focus {
+			background-color: orange;
+		}
+
+
 		</style>
 	</head>
 
@@ -201,10 +298,10 @@
 		<nav class="primary-menu">
  			<ul>
    				<li><a href="index.html">Home</a></li>
-				<li><a href="">About</a></li>
-				<li><a href="">Training Plans</a></li>
-				<li><a href="">Resources</a></li>
-				<li><a href="">Contact</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Training Plans</a></li>
+				<li><a href="#">Resources</a></li>
+				<li><a href="#">Contact</a></li>
 			</ul>
 		</nav>
 
@@ -430,26 +527,29 @@
 			<!-- radio -->
 			<fieldset>	
 				<legend>How often would you like to receive emails?</legend>
-				<label for="twiceWeekly" class="radioLabel">Twice Weekly
-					<input type="radio" id="twiceWeekly" name="frequency" value="twiceWeekly">
-					<span class="checkmark"></span>
-				</label><br>
+				
+			<div class="radioContainer">
+				<div>
+				<input type="radio" id="twiceWeekly" name="frequency" value="twiceWeekly">
+				<label for="twiceWeekly" class="radioLabel">Twice Weekly</label>
+				</div>
 
-				<label for="weekly" class="radioLabel">Weekly
-					<input type="radio" id="weekly" name="frequency" value="weekly">
-					<span class="checkmark"></span>
-				</label><br>
+				<div>
+				<input type="radio" id="weekly" name="frequency" value="weekly">
+				<label for="weekly" class="radioLabel">Weekly</label>
+				</div>
 
-				<label for="monthly" class="radioLabel">Monthly
-					<input type="radio" id="monthly" name="frequency" value="monthly">
-					<span class="checkmark"></span>
-				</label><br>
+				<div>
+				<input type="radio" id="monthly" name="frequency" value="monthly">
+				<label for="monthly" class="radioLabel">Monthly	</label>
+				</div>
+			</div>
 			</fieldset>
 			
-			<p>Help us learn more about you and your running journey!</p>
+			<h3>Help us learn more about you and your running journey!</h3>
 			<!-- datalist -->
 			<fieldset>
-				<legend>Tell us about your running experience level:</legend>
+				<legend>Tell us about your running experience level!</legend>
 				<label for="experience">I'd describe my experience as:</label>
 				<input list="experienceLevels" id="experience" name="experience">
 				<datalist id="experienceLevels">
@@ -464,20 +564,38 @@
 			<fieldset>
 				<p>Have you signed up for a marathon coming up?<br>
 				If so, which marathon?</p>
+				
 
-				<label for=“whichRace”>Name of Marathon:</label>
-				<input type=“text” id=“whichRace” name=“whichRace”>
+				<div class="raceInfo">
+				
+				<div class="nameQ">
+					<label for=“whichRace”>Name of Marathon:</label>
+				</div>
+
+				<div class="nameAnswer">
+					<input type=“text” id=“whichRace” name=“whichRace”>
+				</div>
 
 				<!-- date input -->	
-				<label for=“raceDate”>Date of Race:</label>
-				<input type="date" id=“raceDate” name=“raceDate”>
+				<div class="dateQ">
+					<label for=“raceDate”>Date of Race:</label>
+				</div>
+
+				<div class="dateAnswer">
+					<input type="date" id=“raceDate” name=“raceDate”>
+				</div>
+
+				</div>
+
 			</fieldset>
 
 			<!-- submit and clear buttons -->
+			<div class="formButtons">
 			<fieldset>
 				<input type="submit" value="Submit" class="submitButton">
 				<input type="reset" value="Clear" class="resetButton">
 			</fieldset>	
+			</div>
 
 		</form>
 		</div>
