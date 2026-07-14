@@ -1,0 +1,33 @@
+[
+    {
+        "week": "1",
+        "monday": "Rest",
+        "tuesday": "3 mi",
+        "wednesday": "3 mi",
+        "thursday": "3 mi",
+        "friday": "Rest",
+        "saturday": "6 mi",
+        "sunday": "Crosstraining"
+
+    },
+    {
+        "week": "2",
+        "monday": "Rest",
+        "tuesday": "3 mi",
+        "wednesday": "3 mi",
+        "thursday": "3 mi",
+        "friday": "Rest",
+        "saturday": "7 mi",
+        "sunday": "Crosstraining"
+    },
+    {
+        "week": "3",
+        "monday": "Rest",
+        "tuesday": "3 mi",
+        "wednesday": "4 mi",
+        "thursday": "3 mi",
+        "friday": "Rest",
+        "saturday": "5 mi",
+        "sunday": "Crosstraining"
+    }
+]
