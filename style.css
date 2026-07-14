@@ -24,6 +24,10 @@ ul {
 ol {
 	font-size: 1.2rem;
 }
+/*table style*/
+table{
+	border-collapse:collapse;
+}
 
 /*JSON table style*/
 
@@ -33,7 +37,10 @@ ol {
 	margin: auto;
 	width: fit-content;
 	padding:15px;
+	text-align: center;
+	background-color: #ffd7ab;
 }
+
 .sample th, .sample td, .sample tr {
 /*	border: 1px solid black; */
 	/* border-bottom: 1px solid black; */
@@ -42,11 +49,39 @@ ol {
 
 .sample tr, .sample td {
 	border-bottom: 1px solid gray;
-	border-collapse: collapse;
 }
 
+.JStableContainer {
+	background-color: honeydew;
+	padding:15px;
+}
 
+.JStableContainer h1{
+color:black;
+max-width: 775px;
+margin: auto;
+padding: 10px;
+}
 
+/*iFrame style*/
+.miroWrap{
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+	padding-top: 56.25%; /*16:9 aspect ratio*/
+	margin: auto;
+}
+.responsive-iFrame{
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	max-height:500px;
+	border: none;
+}
 
 /* color scheme 
 #fff5d7 - light yellow

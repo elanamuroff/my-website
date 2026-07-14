@@ -26,6 +26,6 @@ window.onload = function() {
        tableCode += '</tbody><tfoot><tr><td colspan="8">Source: <a href=https://www.halhigdon.com/training-programs/marathon-training/novice-1-marathon/>HalHigdon.com</a></td></tr></tfoot></table>';
  
        document.getElementById('trainingPlanSample').innerHTML = tableCode;
-   })
- }
- 
+
+ })
+}
