@@ -37,7 +37,6 @@ ol {
 .sample th, .sample td, .sample tr {
 /*	border: 1px solid black; */
 	/* border-bottom: 1px solid black; */
-	border-collapse: collapse;
 	padding: 5px;
 }
 
