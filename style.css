@@ -25,6 +25,30 @@ ol {
 	font-size: 1.2rem;
 }
 
+/*JSON table style*/
+
+.sample{
+	border-collapse: collapse;
+	border: 2px solid black;
+	margin: auto;
+	width: fit-content;
+	padding:15px;
+}
+.sample th, .sample td, .sample tr {
+/*	border: 1px solid black; */
+	/* border-bottom: 1px solid black; */
+	border-collapse: collapse;
+	padding: 5px;
+}
+
+.sample tr, .sample td {
+	border-bottom: 1px solid gray;
+	border-collapse: collapse;
+}
+
+
+
+
 /* color scheme 
 #fff5d7 - light yellow
 #ff5e6c - pink
