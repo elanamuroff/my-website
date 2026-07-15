@@ -4,7 +4,13 @@
 } */
 body {
 	font-family: Arial, Helvetica, sans-serif;
-	width: clamp(min(93.75 vw, 50ch), 70vw, 75ch);
+	line-height: 1.5;
+}
+
+.megaContainer {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 0 15px;
 }
 
 h1 {
@@ -13,22 +19,31 @@ h1 {
 	color: #ff5e6c;
 }
 
+p, ul, ol {
+	font-size: 1.1rem;
+	width: clamp(min(93.75vw, 50ch), 70vw, 75ch);
+}
+
 p {
-	font-size: 1.2rem;
 	text-align: left;
-	width: clamp(min(93.75 vw, 50ch), 70vw, 75ch);
 }
 
 ul {
-	font-size: 1.2rem;
+	font-size: 1.1rem;
 }
 
 ol {
-	font-size: 1.2rem;
+	font-size: 1.1rem;
 }
 /*table style*/
 table{
 	border-collapse:collapse;
+}
+
+footer p {
+	text-align: center;
+	margin: auto;
+	padding: 20px 0px;
 }
 
 /*JSON table style*/
@@ -54,8 +69,9 @@ table{
 }
 
 .JStableContainer {
-	background-color: honeydew;
+	background-color: lightpink;
 	padding:15px;
+	min-width: fit-content;
 }
 
 .JStableContainer h1{

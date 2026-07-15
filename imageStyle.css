@@ -4,7 +4,7 @@
 .img-one {
     float: left;
     margin-right: 10px;
-    border: 5px groove #ff5e6c;
+    border: 5px groove lightpink;
     border-radius: 50%;
 }
 
@@ -13,7 +13,7 @@
     float: right;
     margin-left: 10px;
     margin-bottom:10px;
-    border: 8px dotted #feb300;
+    border: 8px dotted lightpink;
     border-radius: 20%;
 }
 
@@ -22,7 +22,7 @@
     float: left;
     margin-right: 10px;
     margin-bottom: 15px;
-    border: 7px double #ffaaab;
+    border: 7px double lightpink;
     border-radius: 25% 45%;
 }
 
@@ -31,6 +31,7 @@
     max-width: 100%;
     height: auto;
     display: block;
+    margin: 20px auto;
 }
 
 footer {

@@ -76,7 +76,8 @@
 			color: white;
 			text-align: center;
 			padding: 5px;
-			display: inline
+			display: inline;
+			width: auto;
 			}
 			.gridText {
 			background-color: rgba(0, 0, 0, 0.5);
@@ -249,17 +250,16 @@
 		nav.primary-menu{
 			width: 100%;
 			margin: auto;
-			/* border: solid 5px #ffecf2; */
 			color: black;	
 			text-align: center;
 			background-color: lightpink;
 		}
 	
 		.primary-menu ul {
-			margin: 0px; 
+			margin: auto; 
  			padding: 0px;
  			display: flex;
- 			justify-content: center;
+			justify-content: center;
 		}
 
 		/* This selector is targeting the <li> elements that are within the class named 'primary-menu'. This ensures that any other lists on the page are not impacted by this css */
@@ -323,49 +323,33 @@
 			</ul>
 		</nav>
 
+		<div class="megaContainer">
 		<h1>Marathon Training 101</h1>
 		<img class="img-one" src="images/racePictureOriginal.png" alt="runners in a road race" width="200px">
 		<h2 class="highlight">Why train for a marathon?</h2>
-		<p class="indent">There are so many reasons why you might be interested in training for a marathon.
-			You might be seeing everyone you know posting pictures with their medals on social media.
-			Maybe you've joined your local run club and have caught the long distance running bug from the other members of
-			the run club.
-			If you have already run long-distance races before, like a half marathon, maybe this is just the next logical
-			step for you in your running journey.
-			Whatever your reason may be, marathon training is a wonderful challenge that can help you learn more about
-			yourself and help make you a more resilient person overall.
-			If you are someone who struggles to set a long-term goal for yourself and stick to your plans for working toward
-			that goal, successfully crossing the finish line of a marathon could be an incredibly meaningful experience for
-			you.
-			Marathon training means staying committed to yourself and your goals over the course of months, or maybe even a
-			year or two.
-			You can finish marathon training a new and improved version of yourself -- mentally, emotionally, and
-			physically.
+		<p class="indent">There are so many reasons why you might be interested in training for a marathon. You might be seeing everyone you know posting pictures with their medals on social media. Maybe you've joined your local run club and have caught the long distance running bug from the other members of the run club.
+		</p>
+		<p>
+		If you have already run long-distance races before, like a half marathon, maybe this is just the next logical step for you in your running journey. Whatever your reason may be, marathon training is a wonderful challenge that can help you learn more about yourself and help make you a more resilient person overall.
+		</p>
+		<p>
+		If you are someone who struggles to set a long-term goal for yourself and stick to your plans for working toward that goal, successfully crossing the finish line of a marathon could be an incredibly meaningful experience for you. Marathon training means staying committed to yourself and your goals over the course of months, or maybe even a year or two. You can finish marathon training a new and improved version of yourself -- mentally, emotionally, and physically.
 		</p>
 		<h2>Why should I maybe not train for a marathon?</h2>
 		<p class="indent">First, you might want to check in with a doctor to ensure no physical health factors would prevent
-			you from successfully completing a marathon training block.
-			If you have already been working with a physical therapist to recover from any injuries, you might want to
-			discuss your potential marathon goal with them as well.
-			There are many other exciting running (or other excercise) goals you could work toward if your body isn't in the
-			right state to respond well to marathon training at the moment.
-			You might also want to consider opting for a different goal if you cannot commit to running at least four days a
-			week during the four or five months leading up to race day.
-			Training also involves scheduling time for strength training (very important for injury prevention) two to four
-			times per week, depending on how much time you want to devote to each strength session.
-			If you haven't already established a routine of regularly running at least a few days a week and you're
-			interested in a marathon only a few months away, maybe you can sign up to run a shorter race this year and sign
-			up for the same race a year in the future.
-			You could spend the next year working on your aerobic base and be really prepared the next time the race comes
-			around.
-			Because nutrition, sleep, stress levels, and so many other factors can play into whether you're in the right
-			physical state to take on marathon training, it's very important to think about what else you have going on in
-			your life during the period of time you want to be training.
-			Will marathon training be a fun addition to your life that you can truly balance with your other
-			responsibilities?
-			Or is it perhaps kinder to yourself to set a different goal during this particular phase in your life?
-			Being honest with yourself about your current capacity to train is incredibly important, because you want
-			training for a race to be an overall enjoyable experience instead of a burden!
+		you from successfully completing a marathon training block. If you have already been working with a physical therapist to recover from any injuries, you might want to discuss your potential marathon goal with them as well.
+		</p>
+
+		<p>
+		There are many other exciting running (or other excercise) goals you could work toward if your body isn't in the right state to respond well to marathon training at the moment. You might also want to consider opting for a different goal if you cannot commit to running at least four days a week during the four or five months leading up to race day. Training also involves scheduling time for strength training (very important for injury prevention) two to four times per week, depending on how much time you want to devote to each strength session.
+		</p>
+
+		<p>
+		If you haven't already established a routine of regularly running at least a few days a week and you're interested in a marathon only a few months away, maybe you can sign up to run a shorter race this year and sign up for the same race a year in the future. You could spend the next year working on your aerobic base and be really prepared the next time the race comes around. 
+		</p>
+
+		<p>
+		Because nutrition, sleep, stress levels, and so many other factors can play into whether you're in the right physical state to take on marathon training, it's very important to think about what else you have going on in your life during the period of time you want to be training. Will marathon training be a fun addition to your life that you can truly balance with your other responsibilities? Or is it perhaps kinder to yourself to set a different goal during this particular phase in your life? Being honest with yourself about your current capacity to train is incredibly important, because you want training for a race to be an overall enjoyable experience instead of a burden!
 		</p>
 
 		<h2>Questions to Ask Yourself When Making Your Decision</h2>
@@ -634,13 +618,16 @@
 		</div>
 
 		<!-- add footer image -->
-		<img class="img-four" src="images/racePictureOriginal.png" alt="runners in a road race" width="800px">
+		<img class="img-four" src="images/racePictureOriginal.png" alt="runners in a road race" width="250px">
+
+		</div> <!-- end megaContainer -->
+
 		<footer style="text-align:center;">
-			<p style="text-align:center;"><a href="#">About</a> | <a href="#">Services</a>
+			<p><a href="#">About</a> | <a href="#">Services</a>
 				| <a href="#">News</a> | <a href="#">Privacy Policy</a> | <a href="#">Contact</a>
 			</p>
-			<br><br><br>
-			<p style="text-align:center;">Copyright &copy; - All rights reserved</p>
+			<br>
+			<p>Copyright &copy; - All rights reserved</p>
 		</footer>
 	</body>
 	<!-- test for re-deployment to GitHub Pages -->
