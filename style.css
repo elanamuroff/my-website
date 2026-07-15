@@ -4,6 +4,7 @@
 } */
 body {
 	font-family: Arial, Helvetica, sans-serif;
+	width: clamp(min(93.75 vw, 50ch), 70vw, 75ch);
 }
 
 h1 {
@@ -14,7 +15,8 @@ h1 {
 
 p {
 	font-size: 1.2rem;
-	text-align: justify;
+	text-align: left;
+	width: clamp(min(93.75 vw, 50ch), 70vw, 75ch);
 }
 
 ul {
